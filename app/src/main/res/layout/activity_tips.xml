@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/emergencyhotline"
+        style="@style/homebutton"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="	#008080"
+        android:onClick="process"
+        android:text="Emergency Hotline"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlinedown"
+        app:layout_constraintEnd_toStartOf="@+id/emergencylineright"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/evaccenlineright"
+        app:layout_constraintTop_toTopOf="@+id/buttonlineup"
+        app:layout_constraintVertical_bias="0.636" />
+
+    <Button
+        android:id="@+id/evacuation"
+        style="@style/homebutton"
+        android:layout_width="78dp"
+        android:layout_height="24dp"
+        android:background="	#008080"
+        android:onClick="process"
+        android:text="EVAC.CENTER"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlinedown"
+        app:layout_constraintEnd_toStartOf="@+id/evaccenlineright"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/homerightline"
+        app:layout_constraintTop_toTopOf="@+id/buttonlineup"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/piclinedown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tips" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/piclineup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="511dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/piclinedown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="368dp"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/boderleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="384dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/boderright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/buttonlineup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="357dp"
+        app:layout_constraintGuide_percent="0.24" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/buttonlinedown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="317dp"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <Button
+        android:id="@+id/home"
+        style="@style/homebutton"
+        android:layout_width="50dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="	#008080"
+        android:onClick="process"
+        android:text="HOME"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlinedown"
+        app:layout_constraintEnd_toStartOf="@+id/homerightline"
+        app:layout_constraintStart_toStartOf="@+id/homeleftguide"
+        app:layout_constraintTop_toTopOf="@+id/buttonlineup"
+        app:layout_constraintVertical_bias="0.518" />
+
+    <Button
+        android:id="@+id/tips"
+        style="@style/homebutton"
+        android:layout_width="41dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="	#008080"
+        android:text="TIPS"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonlinedown"
+        app:layout_constraintEnd_toStartOf="@+id/boderright"
+        app:layout_constraintHorizontal_bias="0.714"
+        app:layout_constraintStart_toStartOf="@+id/emergencylineright"
+        app:layout_constraintTop_toTopOf="@+id/buttonlineup"
+        app:layout_constraintVertical_bias="0.566" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/homerightline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="326dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/evaccenlineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="211dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/emergencylineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="77dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/borderup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/borderdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="1" />
+
+    <ScrollView
+        android:layout_width="367dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boderright"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/buttonlinedown">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="339dp"
+                android:layout_height="208dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/tips1"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="85dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/tips2"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+</android.support.constraint.ConstraintLayout>
